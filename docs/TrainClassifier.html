@@ -14285,18 +14285,18 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define Model</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
-<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
+<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
     
-<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
     
-<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(),</span>
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span>
 
-<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+<span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
 
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)</span>
 <span class="p">])</span>
@@ -14396,45 +14396,45 @@ Found 200 images belonging to 2 classes.
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Epoch 1/20
-25/25 [==============================] - 2s 48ms/step - loss: 0.6951 - accuracy: 0.5275 - val_loss: 0.6811 - val_accuracy: 0.5000
+25/25 [==============================] - 2s 49ms/step - loss: 0.6870 - accuracy: 0.5510 - val_loss: 0.6887 - val_accuracy: 0.5000
 Epoch 2/20
-25/25 [==============================] - 1s 35ms/step - loss: 0.6860 - accuracy: 0.5400 - val_loss: 0.6588 - val_accuracy: 0.5500
+25/25 [==============================] - 1s 30ms/step - loss: 0.6919 - accuracy: 0.4950 - val_loss: 0.6827 - val_accuracy: 0.5400
 Epoch 3/20
-25/25 [==============================] - 1s 33ms/step - loss: 0.6626 - accuracy: 0.6224 - val_loss: 0.6159 - val_accuracy: 0.5350
+25/25 [==============================] - 1s 27ms/step - loss: 0.6877 - accuracy: 0.5153 - val_loss: 0.6763 - val_accuracy: 0.7750
 Epoch 4/20
-25/25 [==============================] - 1s 32ms/step - loss: 0.6179 - accuracy: 0.6480 - val_loss: 0.5820 - val_accuracy: 0.7050
+25/25 [==============================] - 1s 32ms/step - loss: 0.6748 - accuracy: 0.6173 - val_loss: 0.6491 - val_accuracy: 0.5600
 Epoch 5/20
-25/25 [==============================] - 1s 31ms/step - loss: 0.5362 - accuracy: 0.7755 - val_loss: 0.4682 - val_accuracy: 0.7650
+25/25 [==============================] - 1s 26ms/step - loss: 0.6660 - accuracy: 0.5944 - val_loss: 0.6205 - val_accuracy: 0.6550
 Epoch 6/20
-25/25 [==============================] - 1s 37ms/step - loss: 0.4986 - accuracy: 0.7653 - val_loss: 0.4490 - val_accuracy: 0.7750
+25/25 [==============================] - 1s 27ms/step - loss: 0.6348 - accuracy: 0.6225 - val_loss: 0.5742 - val_accuracy: 0.8000
 Epoch 7/20
-25/25 [==============================] - 1s 34ms/step - loss: 0.4599 - accuracy: 0.7781 - val_loss: 0.2868 - val_accuracy: 0.9000
+25/25 [==============================] - 1s 28ms/step - loss: 0.6000 - accuracy: 0.6939 - val_loss: 0.5270 - val_accuracy: 0.8250
 Epoch 8/20
-25/25 [==============================] - 1s 36ms/step - loss: 0.4260 - accuracy: 0.7959 - val_loss: 0.3214 - val_accuracy: 0.8950
+25/25 [==============================] - 1s 28ms/step - loss: 0.5824 - accuracy: 0.7300 - val_loss: 0.5416 - val_accuracy: 0.7050
 Epoch 9/20
-25/25 [==============================] - 1s 33ms/step - loss: 0.4146 - accuracy: 0.7959 - val_loss: 0.2626 - val_accuracy: 0.9000
+25/25 [==============================] - 1s 32ms/step - loss: 0.5351 - accuracy: 0.7725 - val_loss: 0.4521 - val_accuracy: 0.8550
 Epoch 10/20
-25/25 [==============================] - 1s 35ms/step - loss: 0.3597 - accuracy: 0.8571 - val_loss: 0.2373 - val_accuracy: 0.9200
+25/25 [==============================] - 1s 35ms/step - loss: 0.4774 - accuracy: 0.7934 - val_loss: 0.3764 - val_accuracy: 0.9000
 Epoch 11/20
-25/25 [==============================] - 1s 32ms/step - loss: 0.3553 - accuracy: 0.8801 - val_loss: 0.2178 - val_accuracy: 0.9200
+25/25 [==============================] - 1s 32ms/step - loss: 0.5144 - accuracy: 0.7650 - val_loss: 0.4364 - val_accuracy: 0.7900
 Epoch 12/20
-25/25 [==============================] - 1s 34ms/step - loss: 0.3754 - accuracy: 0.8546 - val_loss: 0.2649 - val_accuracy: 0.9100
+25/25 [==============================] - 1s 28ms/step - loss: 0.4634 - accuracy: 0.8100 - val_loss: 0.3443 - val_accuracy: 0.8950
 Epoch 13/20
-25/25 [==============================] - 1s 34ms/step - loss: 0.3246 - accuracy: 0.8520 - val_loss: 0.2239 - val_accuracy: 0.9250
+25/25 [==============================] - 1s 29ms/step - loss: 0.4348 - accuracy: 0.8010 - val_loss: 0.3005 - val_accuracy: 0.8900
 Epoch 14/20
-25/25 [==============================] - 1s 36ms/step - loss: 0.3138 - accuracy: 0.8724 - val_loss: 0.3185 - val_accuracy: 0.8450
+25/25 [==============================] - 1s 31ms/step - loss: 0.4012 - accuracy: 0.8300 - val_loss: 0.3286 - val_accuracy: 0.9000
 Epoch 15/20
-25/25 [==============================] - 1s 43ms/step - loss: 0.2823 - accuracy: 0.8775 - val_loss: 0.2540 - val_accuracy: 0.9200
+25/25 [==============================] - 1s 30ms/step - loss: 0.3775 - accuracy: 0.8475 - val_loss: 0.3153 - val_accuracy: 0.9050
 Epoch 16/20
-25/25 [==============================] - 1s 34ms/step - loss: 0.3022 - accuracy: 0.8776 - val_loss: 0.3217 - val_accuracy: 0.8950
+25/25 [==============================] - 1s 28ms/step - loss: 0.3883 - accuracy: 0.8350 - val_loss: 0.2795 - val_accuracy: 0.8950
 Epoch 17/20
-25/25 [==============================] - 1s 42ms/step - loss: 0.2120 - accuracy: 0.9184 - val_loss: 0.3323 - val_accuracy: 0.8900
+25/25 [==============================] - 1s 33ms/step - loss: 0.3844 - accuracy: 0.8393 - val_loss: 0.2837 - val_accuracy: 0.9100
 Epoch 18/20
-25/25 [==============================] - 1s 32ms/step - loss: 0.2498 - accuracy: 0.9005 - val_loss: 0.2201 - val_accuracy: 0.9400
+25/25 [==============================] - 1s 28ms/step - loss: 0.3757 - accuracy: 0.8418 - val_loss: 0.2666 - val_accuracy: 0.8950
 Epoch 19/20
-25/25 [==============================] - 1s 32ms/step - loss: 0.2365 - accuracy: 0.9050 - val_loss: 0.2335 - val_accuracy: 0.9250
+25/25 [==============================] - 1s 31ms/step - loss: 0.3612 - accuracy: 0.8495 - val_loss: 0.2801 - val_accuracy: 0.9100
 Epoch 20/20
-25/25 [==============================] - 1s 36ms/step - loss: 0.2607 - accuracy: 0.9031 - val_loss: 0.2282 - val_accuracy: 0.9200
+25/25 [==============================] - 1s 30ms/step - loss: 0.3746 - accuracy: 0.8342 - val_loss: 0.3022 - val_accuracy: 0.8700
 </pre>
 </div>
 </div>
