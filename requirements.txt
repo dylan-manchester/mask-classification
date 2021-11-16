@@ -5,6 +5,7 @@ matplotlib==3.3.4
 pandas==1.2.4
 numpy==1.20.1
 h5py==2.10.0
-opencv-python==4.3.0.36
+opencv-python==4.5.4.58
 lxml==4.6.3
 scipy==1.6.2
+mediapipe==0.8.9
